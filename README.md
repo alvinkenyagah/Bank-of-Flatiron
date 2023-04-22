@@ -1,5 +1,8 @@
 # Bank-of-Flatiron
 
+## Description 
+
+For this project builds out a React application that displays a list of your recent bank transactions, among other features.
 
 
 
