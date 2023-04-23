@@ -1,6 +1,21 @@
 #root {
-  margin: -1%,15%,85%,0%,75;
+  margin: -1%, 15%, 85%, 0%, 75;
   text-align: center;
-  
+  color: white;
 }
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-image: url("https://c1.wallpaperflare.com/path/898/284/844/stock-trading-monitor-desk-b13eeef2ca88b5860d85201ae0ecc309.jpg");
+
+  background-repeat: no-repeat;
+  backdrop-filter: blur(12px);
+  background-size: cover;
+
+  height: 97vh;
+
+}

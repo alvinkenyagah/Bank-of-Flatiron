@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import DisplayTransaction from "./assets/display";
-import PostTransaction from "./assets/post";
+import AddTransaction from "./assets/post";
 import SearchTransaction from "./assets/search";
 
 function App() {
@@ -9,8 +9,7 @@ function App() {
     <>
       <h1>BANK OF FLATIRON</h1>
       <SearchTransaction />
-
-      <PostTransaction />
+      <AddTransaction />
       <DisplayTransaction />
     </>
   );

@@ -1,33 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function PostTransaction() {
+function AddTransaction() {
+  const [date, setDate] = useState("");
+  const [description, setDescription] = useState("");
+  const [category, setCategory] = useState("");
+  const [amount, setAmount] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const newTransaction = {
+      date: date,
+      description: description,
+      category: category,
+      amount: amount,
+    };
+
+    fetch(`http://localhost:8001/transactions`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newTransaction),
+    })
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          throw new Error("Error adding transaction");
+        }
+      })
+      .then((data) => {
+        console.log(data);
+        setDate("");
+        setDescription("");
+        setCategory("");
+        setAmount("");
+        window.location.reload();
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
   return (
-    <div>
-      <form>
-        <label for="Date">Date</label>
-        <input
-          type="date"
-          placeholder="Enter Date"
-          style={{ marginLeft: "5px" }}
-        />
-
-        <input
-          type="text"
-          placeholder="Enter Description"
-          style={{ marginLeft: "5px" }}
-        />
-        <input
-          type="text"
-          placeholder="Enter Category"
-          style={{ marginLeft: "5px" }}
-        />
-        <input
-          type="number"
-          placeholder="Enter Amount"
-          style={{ marginLeft: "5px" }}
-        />
-        <input type="submit" value="SUBMIT" style={{ marginLeft: "5px" }} />
+    <div style={{marginBottom:"10px"}}>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Date:
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+        </label>
+        
+        <label>
+          Description:
+          <input
+            type="text"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+        </label>
+    
+        <label>
+          Category:
+          <input
+            type="text"
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          />
+        </label>
+    
+        <label>
+          Amount:
+          <input
+            type="number"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+          />
+        </label>
+        <button type="submit">Add Transaction</button>
       </form>
     </div>
   );
 }
+
+export default AddTransaction;
