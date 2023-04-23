@@ -1,15 +1,23 @@
 # Bank-of-Flatiron
 
-## Description 
+## Description
 
 For this project builds out a React application that displays a list of your recent bank transactions, among other features.
 
+## Installation
 
+<ul>
+<li>git clone https://github.com/alvinkenyagah/Bank-of-Flatiron.git </li>
+<li>cd Bank-of-Flatiron</li>
+<li>npm install && npm run dev</li>
+<li>cd src && json-server -w db.json p 8001</li>
+
+<ul>
 
 ## MIT License
 
 21 April 2023 <br>
-Copyright (c) 2023 alvinkenyagah 
+Copyright (c) 2023 alvinkenyagah
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
