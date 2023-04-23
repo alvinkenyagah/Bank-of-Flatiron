@@ -111,6 +111,13 @@
       "category": "Bill",
       "amount": "-500",
       "id": 16
+    },
+    {
+      "date": "2023-04-25",
+      "description": "Water bill",
+      "category": "Bill",
+      "amount": "350",
+      "id": 17
     }
   ]
 }

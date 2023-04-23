@@ -60,6 +60,7 @@ function AddTransaction() {
           <input
             type="text"
             value={description}
+            placeholder="Enter description"
             onChange={(e) => setDescription(e.target.value)}
           />
         </label>
@@ -69,6 +70,7 @@ function AddTransaction() {
           <input
             type="text"
             value={category}
+            placeholder="Enter category"
             onChange={(e) => setCategory(e.target.value)}
           />
         </label>
@@ -78,6 +80,7 @@ function AddTransaction() {
           <input
             type="number"
             value={amount}
+            placeholder="Enter amount"
             onChange={(e) => setAmount(e.target.value)}
           />
         </label>
