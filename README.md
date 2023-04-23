@@ -1,5 +1,5 @@
 # Bank-of-Flatiron
-
+<img src="./snip.jpg" alt="snip">
 ## Description
 
 Bank-of-Flatiron project is a React application that displays a list of your recent bank transactions, one can post their recent transaction and filter out specific transactions using a search bar among other functionalities.
