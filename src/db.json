@@ -118,6 +118,13 @@
       "category": "Bill",
       "amount": "350",
       "id": 17
+    },
+    {
+      "date": "2023-04-27",
+      "description": "Airtime",
+      "category": "Bills",
+      "amount": "600",
+      "id": 18
     }
   ]
 }

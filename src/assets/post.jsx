@@ -24,11 +24,7 @@ function AddTransaction() {
       body: JSON.stringify(newTransaction),
     })
       .then((res) => {
-        if (res.ok) {
-          return res.json();
-        } else {
-          throw new Error("Error adding transaction");
-        }
+       res.json()
       })
       .then((data) => {
         console.log(data);
