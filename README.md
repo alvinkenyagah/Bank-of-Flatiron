@@ -2,7 +2,7 @@
 
 ## Description
 
-For this project builds out a React application that displays a list of your recent bank transactions, among other features.
+Bank-of-Flatiron project is a React application that displays a list of your recent bank transactions, one can post their recent transaction and filter out specific transactions using a search bar among other functionalities.
 
 ## Installation
 
