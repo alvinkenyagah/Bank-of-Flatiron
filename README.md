@@ -6,13 +6,13 @@ For this project builds out a React application that displays a list of your rec
 
 ## Installation
 
-<ul>
+<ol>
 <li>git clone https://github.com/alvinkenyagah/Bank-of-Flatiron.git </li>
 <li>cd Bank-of-Flatiron</li>
 <li>npm install && npm run dev</li>
 <li>cd src && json-server -w db.json p 8001</li>
 
-<ul>
+<ol>
 
 ## MIT License
 
