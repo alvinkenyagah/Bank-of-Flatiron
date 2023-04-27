@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import DisplayTransaction from "./assets/display";
-import AddTransaction from "./assets/post";
-import SearchTransaction from "./assets/search";
+import DisplayTransaction from "./components/display";
+import AddTransaction from "./components/post";
+import SearchTransaction from "./components/search";
 
 function App() {
   return (
