@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import DisplayTransaction from "./components/display";
-import AddTransaction from "./components/post";
+import DisplayTransaction from "./components/TransactionDisplay";
+import AddTransaction from "./components/TransactionPost";
 
 function App() {
   return (
