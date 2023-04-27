@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import DisplayTransaction from "./components/display";
 import AddTransaction from "./components/post";
-import SearchTransaction from "./components/search";
 
 function App() {
   return (

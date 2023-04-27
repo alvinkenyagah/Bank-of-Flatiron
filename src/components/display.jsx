@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
+import TransactionFilter from "./Transactionfilter";
 
 export default function DisplayTransaction() {
   const [transactions, setTransactions] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
   const [filteredTransactions, setFilteredTransactions] = useState([]);
 
   useEffect(() => {
@@ -24,11 +24,8 @@ export default function DisplayTransaction() {
       });
   }, []);
 
-  const handleSearch = () => {
-    const newFilteredTransactions = transactions.filter((transaction) =>
-      transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setFilteredTransactions(newFilteredTransactions);
+  const handleFilter = (filteredTransactions) => {
+    setFilteredTransactions(filteredTransactions);
   };
 
   return (
@@ -41,17 +38,7 @@ export default function DisplayTransaction() {
           }
         `}
       </style>
-      <div style={{ marginBottom: "10px" }}>
-        <label style={{ marginRight: "10px" }}>Search description:</label>
-        <input
-          type="text"
-          placeholder="Search by description"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <button onClick={handleSearch}>Search</button>
-        
-      </div>
+      <TransactionFilter transactions={transactions} onFilter={handleFilter} />
       <table>
         <tr>
           <th>date</th>
