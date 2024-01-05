@@ -8,7 +8,7 @@ Bank-of-Flatiron project is a React application that displays a list of your rec
 ## Installation
 
 
-- `git git@github.com:alvinkenyagah/Bank-of-Flatiron.git`
+- `git clone git@github.com:alvinkenyagah/Bank-of-Flatiron.git`
 - `cd Bank-of-Flatiron`
 - `npm install`
 - `npm run dev`
