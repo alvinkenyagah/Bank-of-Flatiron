@@ -7,7 +7,7 @@ export default function DisplayTransaction() {
   const [filteredTransactions, setFilteredTransactions] = useState([]);
 
   useEffect(() => {
-    const url = `http://localhost:8001/transactions`;
+    const url = `https://flatironapi-git-main-alvins-projects-d5011cd4.vercel.app/transactions`;
 
     fetch(url, {
       method: "GET",
@@ -30,7 +30,7 @@ export default function DisplayTransaction() {
   };
 
   const handleDelete = (id) => {
-    const url = `http://localhost:8001/transactions/${id}`;
+    const url = `https://flatironapi-git-main-alvins-projects-d5011cd4.vercel.app/transactions/${id}`;
     fetch(url, {
       method: "DELETE",
       headers: { "content-type": "application/json" },

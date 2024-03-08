@@ -16,7 +16,7 @@ function AddTransaction() {
       amount: amount,
     };
 
-    fetch(`http://localhost:8001/transactions`, {
+    fetch(`https://flatironapi-git-main-alvins-projects-d5011cd4.vercel.app/transactions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
